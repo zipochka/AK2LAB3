@@ -12,5 +12,9 @@ int Calculator::Sub (double a, double b)
 
 int Calculator::Mul (double a, double b)
 {
-    return a * b + 0.5;
+	double result = 0;
+    	for (int i = 0; i < b; i++) {
+		result = result + a;
+	}
+	return result;
 }
